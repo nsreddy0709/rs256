@@ -22,6 +22,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter{
 
+    //RS256
     @Autowired
     JwtTokenUtil jwtTokenUtil;
 
