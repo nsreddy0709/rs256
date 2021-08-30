@@ -87,7 +87,7 @@ public class UserResource {
         }
         catch (NullPointerException e)
         {
-            String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
+            String regex = "^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(email);
             if(matcher.matches() == false)
